@@ -5,6 +5,9 @@ from model import GemmaLikeModel
 from train import train
 from inference import generate_text
 from evaluate import evaluate_model
+import torch.optim as optim
+import torch
+import torch.nn as nn
 
 # 1. Initialize a tokenizer (using a small, fast tokenizer for demonstration)
 # In a real scenario, you would choose a tokenizer appropriate for your pre-training data.

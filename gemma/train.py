@@ -1,4 +1,7 @@
-def train(num_epochs,dataloader,model,optimizer,loss_fn,device):
+import tqdm
+import torch
+
+def train(num_epochs,dataloader,model,optimizer,loss_fn,vocab_size,device):
     # Loop over epochs
     for epoch in range(num_epochs):
         total_loss = 0
