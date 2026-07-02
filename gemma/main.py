@@ -80,7 +80,7 @@ optimizer = optim.AdamW(model.parameters(), lr=learning_rate)
 
 model.train()
 
-train(num_epochs,dataloader,model,optimizer,loss_fn,device)
+train(num_epochs,dataloader,model,optimizer,loss_fn,vocab_size,device)
 
 model.eval()
 
@@ -89,7 +89,6 @@ eval_loss = evaluate_model(model, dataloader, loss_fn, device, vocab_size)
 print(f"Final Evaluation Loss: {eval_loss:.4f}")
 
 
-print("Text generation function 'generate_text' defined successfully.")
 
 # 8. Call the generate_text function with a sample prompt and print the output
 print("\n--- Demonstrating Text Generation ---")
