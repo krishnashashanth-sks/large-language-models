@@ -8,6 +8,7 @@ from model import TransformerDecoderModel
 from dataset import CodeDataset
 from inference import generate_code_sequence
 from utils import normalize_tokens
+
 dummy_tokenized_data_raw = [
     {'tokens': ['def', 'calculate_sum', '(', 'a', ',', 'b', ')', ':', 'result', '=', 'a', '+', 'b', ';', 'return', 'result']}, {'tokens': ['x', '=', '100', ';', 'y', '=', '200', ';', 'print', '(', 'x', '+', 'y', ')']},
     {'tokens': ['if', '(', 'temperature', '>', '25', ')', ':', 'print', '(', '"Hot"', ')', 'else', ':', 'print', '(', '"Cold"', ')']},
